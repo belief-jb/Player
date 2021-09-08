@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Welcomescreen"
+    android:orientation="vertical"
+    android:gravity="center"
+    app:cardBackgroundColor="@color/white">
+
+    <ImageView
+        android:layout_width="700dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-350dp"
+        android:src="@drawable/rounded_corner"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="-250dp"
+        android:layout_marginBottom="250.00dp">
+
+        <ImageView
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/player" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_marginTop="-65dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="30dp">
+
+
+
+
+            <CheckBox
+                android:id="@+id/check"
+                android:layout_width="40.00dp"
+                android:layout_height="40.00dp"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="I have read accept the "
+                android:textSize="15.00sp"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Terms &amp; conditions"
+                android:textSize="15.00sp"
+                android:textColor="@color/purple_700"/>
+
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="submit"
+            android:layout_marginTop="-30dp"
+            android:textSize="15.00sp"
+            android:background="#363B57"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+
+
+</LinearLayout>
+
+
+
+
+
