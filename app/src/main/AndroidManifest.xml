@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.player">
+    package="com.belief.player">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -10,18 +13,23 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Player">
         <activity
-            android:name=".Homescreen"
+            android:name="com.belief.player.Urlviewactivity"
             android:exported="true" />
         <activity
-            android:name=".Welcomescreen"
+            android:name="com.belief.player.Homescreen"
+            android:exported="true"
+      />
+        <activity
+            android:name="com.belief.player.Welcomescreen"
             android:exported="true" />
         <activity
-            android:name=".MainActivity"
+            android:name="com.belief.player.Splashscreen"
             android:exported="true"
             android:theme="@style/Theme.MaterialComponents.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
+                <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>

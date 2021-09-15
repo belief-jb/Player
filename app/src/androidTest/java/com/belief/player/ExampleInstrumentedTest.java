@@ -1,4 +1,4 @@
-package com.example.player;
+package com.belief.player;
 
 import android.content.Context;
 
